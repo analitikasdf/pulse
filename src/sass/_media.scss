@@ -10,11 +10,21 @@
             padding: 20px;
         }
     }
+    .consultation {
+        padding-left: 50px;
+    }
 }
     
 @media (max-width: 991px) {
-    .header__logo {
-        width: 220px;
+    .promo {
+        &__wrapper {
+            padding-right: 50px;
+        }
+    }
+    .header {
+        &__logo {
+            width: 220px;
+        }
     }
     .advantages {
         &__item {
@@ -28,8 +38,27 @@
             padding: 5px;
         }
     }
+    .carousel {
+        &__inner {
+            
+            img {
+                
+                margin: 0 auto; 
+            } 
+            ul {
+                
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                li {
+                    list-style-type: none
+                }
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
+
     .header {
         flex-direction: column;
         justify-content: space-between;
@@ -37,6 +66,7 @@
     }
     .promo {
         &__wrapper {
+            padding: 0;
             align-items: center;
         }
         &__subheader {
@@ -56,11 +86,30 @@
             align-items: center;
         }
     }
+    .carousel {
+        &__inner {
+            width: 500px;
+            img {
+                width: 500px;
+                margin: 0 auto; 
+            } 
+            ul {
+                width: 500px;
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                li {
+                    list-style-type: none
+                }
+            }
+        }
+    }
 }
 @media (max-width: 575px) {
     .promo {
         &__wrapper {
             margin-top: 50px;
+            padding: 0;
         }
         &__header {
             text-align: center;
@@ -76,5 +125,33 @@
         &_main {
             width: 270px;
         }
-    }   
+    } 
+    .feed-form {
+        width: 210px;
+    }
+    .title_left
+    {
+        font-size: 27px;
+    }
+    .consultation__descr {
+        font-size: 18px;
+    }
+    .carousel {
+        &__inner {
+            width: 300px;
+            img {
+                width: 300px;
+                margin: 0 auto; 
+            }
+            ul {
+                width: 300px;
+                display: flex;
+                justify-content: space-around;
+                padding: 0;
+                li {
+                    list-style-type: none
+                }
+            }
+        }
+    }
 }
