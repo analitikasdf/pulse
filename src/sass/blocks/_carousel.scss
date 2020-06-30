@@ -1,0 +1,128 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+    .slick-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;   
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -66px;
+        left: auto;
+        border: none;
+        background-color: #fff;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-dots li button:before {
+        font-family: 'slick';
+         font-size: 6px;
+         line-height: 20px;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 20px;
+         height: 20px;
+         content: '•'; /* <-- Вот этот символ */
+         text-align: center;
+         opacity: .25;
+         color: black;
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+       }
+    .my-dots {
+        position: absolute;
+        bottom: -45px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .my-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .my-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    }
+    
+    .my-dots li button:hover,
+    .my-dots li button:focus {
+    outline: none;
+    }
+    
+    .my-dots li button:hover:before,
+    .my-dots li button:focus:before {
+    opacity: 1;
+    }
+    
+    .my-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Обводка маркеров */
+    
+    /* WebKit (Safari/Chrome) Only */
+    -webkit-text-stroke: 1px red;
+    /* If we weren't using text-shadow, we'd set a fallback color
+        and use this to set color instead
+        -webkit-text-fill-color: white; */
+    text-shadow: 1px 1px 0 #f00, /* Simulated effect for Firefox and Opera
+            and nice enhancement for WebKit */
+    -1px -1px 0 #f00, 1px -1px 0 #f00, -1px 1px 0 #f00, 1px 1px 0 #f00;
+        /* / Обводка маркеров */
+        
+    }
+    
+    .my-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+    }   
+    
+}
