@@ -56,6 +56,14 @@
             }
         }
     }
+    .content-item {
+        &__feed {
+            max-width: 480px;
+        }
+        &__img {
+            margin: 20px;
+        }
+    }
 }
 @media (max-width: 767px) {
 
@@ -104,8 +112,22 @@
             }
         }
     }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            &:nth-child(2) {
+                margin: 20px;
+            }
+        }
+    }
+        
 }
 @media (max-width: 575px) {
+    .title {
+        font-size: 26px;
+    }
     .promo {
         &__wrapper {
             margin-top: 50px;
@@ -154,4 +176,13 @@
             }
         }
     }
+    .reviews {
+        .content-item {
+            flex-direction: column;
+            padding: 20px;
+            &__feed {
+                margin-right: 0;
+            }
+        }
+    } 
 }
