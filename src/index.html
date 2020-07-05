@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -74,7 +75,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">
                         Заботимся о здоровье
                     </div>
@@ -108,9 +109,9 @@
                 Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
                 
                 <button class="button button_submit">заказать консультацию</button>
@@ -377,7 +378,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="reviews__content">
-                <div class="content-item">
+                <div class="content-item" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/feed_1.png" alt="feed" class="content-item__img">
                     <div class="content-item__feed">
                         <div class="content-item__title">Ирина Иванченко</div>
@@ -390,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-item">
+                <div class="content-item" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/feed_2.png" alt="feed" class="content-item__img">
                     <div class="content-item__feed">
                         <div class="content-item__title">Иван Сёмочкин</div>
@@ -401,7 +402,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-item">
+                <div class="content-item" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/feed_3.png" alt="feed" class="content-item__img">
                     <div class="content-item__feed">
                         <div class="content-item__title">Юлия Дашкина</div>
@@ -436,9 +437,9 @@
             <div class="modal__subtitle">Просто заполните форму заявки</div>
             <div class="modal__description">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_modal" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
                 
                 <button class="button button_submit">заказать консультацию</button>
             </form>
@@ -449,7 +450,7 @@
             <div class="modal__description">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_modal" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
                 
                 <button class="button button_submit">купить</button>
@@ -462,9 +463,16 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
